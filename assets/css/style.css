@@ -1,26 +1,35 @@
+/** {
+  outline: 1px solid red;
+}*/
+
 .text-uppercase{
 text-transform: uppercase;
 }
 .link{
-font-weight: 700;
+font-weight: 700px;
 padding: 21px;
 display: inline-block;
 }
 .logo{
 float: right;
+margin-top:5px;
+
 }
 header{
 position: fixed;
 background: white;
 width: 100%;
+height: 100px;
 top: 0;
+background-color: #FEE0C6;
 }
 .menu{
 padding: 14px 70px;
 overflow: auto;
+
 }
 #home{
-background-image: url(../img/bg-home_720.jpg);
+background-image: url(../img/bg-home.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -47,12 +56,18 @@ margin-top: 63px;
 display: inline-block;
 font-size: 14px;
 }
+header a{
+  background-color: #FF6A6A;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+
+}
 #services{
 background-color: #f17c72;
 text-align: center;
 color: white;
-padding: 50px 7px;
-
+padding: 70px 7px;
 }
 .box-services{
 display: inline-block;
@@ -71,16 +86,113 @@ color: white;
 padding-top: 7px;
 }
 #work{
-/*background-image: url(../img/hero.png);*/
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-color: black;
 text-align: center;
-margin-top: 80px;
+margin-top: 30px;
 }
-#image{
-width: 1200px;
-height: 1800px;
+.titulo{
+  color:#000;
+}
+#container{
+  margin-top: 80px;
+}
+/*#the-team{
+  display: block;
+}*/
+.style{
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+}
 
+h1{
+  color: #fff;
+  text-align: center;
+}
+.galeria{
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.galeria li{
+  margin:5px;
+  margin-left: 60px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Boogaloo', cursive;
+}
+.galeria img{
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+}
+/*los estilos del modal*/
+.modal{
+  display: none;
+}
+.modal:target{
+  display: block;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal h3{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.imagen{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.imagen a{
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  margin:0 10px;
+  margin-top:350px;
+}
+.imagen a:nth-child(2){
+  margin:0;
+  height: 100%;
+  flex-shrink: 2;
+}
+
+.imagen img{
+  width: 400px;
+  height: 400px;
+  max-width:100%;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+}
+.cerrar{
+  display: block;
+  background: pink;
+  width: 25px;
+  height: 25px;
+  margin:15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color:#000;
+  padding: 10px;
+  border-radius: 50%;
+  line-height: 25px;
+  margin-top: 350px;
 }
